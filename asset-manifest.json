@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/craigcratergames/CraterGames/static/css/main.6d4801f2.css",
+    "main.js": "/craigcratergames/CraterGames/static/js/main.4fb01cfa.js",
+    "index.html": "/craigcratergames/CraterGames/index.html",
+    "main.6d4801f2.css.map": "/craigcratergames/CraterGames/static/css/main.6d4801f2.css.map",
+    "main.4fb01cfa.js.map": "/craigcratergames/CraterGames/static/js/main.4fb01cfa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d4801f2.css",
+    "static/js/main.4fb01cfa.js"
+  ]
+}
