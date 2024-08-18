@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/CraterGames/">
       <div className="App d-flex flex-column min-vh-100">
         <NavBar />
         <div className="flex-grow-1">
