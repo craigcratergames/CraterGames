@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/CraterGames/static/css/main.40d0aba2.css",
-    "main.js": "/CraterGames/static/js/main.e4383e2c.js",
+    "main.js": "/CraterGames/static/js/main.765a6532.js",
     "index.html": "/CraterGames/index.html",
     "main.40d0aba2.css.map": "/CraterGames/static/css/main.40d0aba2.css.map",
-    "main.e4383e2c.js.map": "/CraterGames/static/js/main.e4383e2c.js.map"
+    "main.765a6532.js.map": "/CraterGames/static/js/main.765a6532.js.map"
   },
   "entrypoints": [
     "static/css/main.40d0aba2.css",
-    "static/js/main.e4383e2c.js"
+    "static/js/main.765a6532.js"
   ]
 }
