@@ -1,0 +1,16 @@
+.brand-logo {
+    padding-left: 0; /* Removes any additional padding */
+    margin-left: 0; /* Adds margin to move it from the edge */
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Keeps the navigation on the right */
+    padding-right: 0; /* Removes any additional padding */
+    margin-right: 0; /* Adds margin to move it from the edge */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-left: 10px; /* Adjust spacing between links */
+    padding-right: 10px;
+  }
+  
