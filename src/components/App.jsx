@@ -5,10 +5,11 @@ import About from './About';
 import Contact from './Contact';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import image from '../assets/image.png'
 
 function App() {
   return (
-    <Router basename="/CraterGames/">
+    <Router basename="/CraterGames">
       <div className="App d-flex flex-column min-vh-100">
         <NavBar />
         <div className="flex-grow-1">
@@ -17,6 +18,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+        </div>
+        <div className="Construction__flex-image"> 
+          <img src={image} alt="Under Construction" style={{width: 'auto', height: 'auto', margin: '0', padding: '0'}} />
         </div>
         <Footer />
       </div>
