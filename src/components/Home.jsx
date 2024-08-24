@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
+import HeroSection from './HeroSection';
 
-function Home() {
+const Home = () => {
   return (
     <div>
-      <h2>Home Page</h2>
-      <p>Welcome to the Home Page!</p>
+      <HeroSection />
     </div>
   );
 }
