@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/CraterGames/static/css/main.40d0aba2.css",
-    "main.js": "/CraterGames/static/js/main.b5be94ec.js",
+    "main.css": "/CraterGames/static/css/main.179bef82.css",
+    "main.js": "/CraterGames/static/js/main.3f9026a7.js",
+    "static/media/DeathComesFrontCover.png": "/CraterGames/static/media/DeathComesFrontCover.a248c75eee781a011db4.png",
+    "static/media/DeathComesPg1.png": "/CraterGames/static/media/DeathComesPg1.fd83293e191148e487ff.png",
+    "static/media/background.jpg": "/CraterGames/static/media/background.451dcb449a2555b733fe.jpg",
+    "static/media/Under-Construction.png": "/CraterGames/static/media/Under-Construction.33622e7466fa286244d5.png",
+    "static/media/DeathComesPg0.png": "/CraterGames/static/media/DeathComesPg0.aa3a7fc3d97cc4626772.png",
     "index.html": "/CraterGames/index.html",
-    "main.40d0aba2.css.map": "/CraterGames/static/css/main.40d0aba2.css.map",
-    "main.b5be94ec.js.map": "/CraterGames/static/js/main.b5be94ec.js.map"
+    "main.179bef82.css.map": "/CraterGames/static/css/main.179bef82.css.map",
+    "main.3f9026a7.js.map": "/CraterGames/static/js/main.3f9026a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.40d0aba2.css",
-    "static/js/main.b5be94ec.js"
+    "static/css/main.179bef82.css",
+    "static/js/main.3f9026a7.js"
   ]
 }
