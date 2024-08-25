@@ -1,50 +1,40 @@
 .hero-container {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
-  }
-  
-  .hero-content {
-    position: relative;
-    color: white;
-    text-align: center;
-  }
-  
-  .hero-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-description {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .hero-button {
-    padding: 0.75rem 2rem;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.25rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hero-button:hover {
-    background-color: #0056b3;
-  }
-  
+  background-image: url('./assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  min-height: 100vh;
+  margin: 0 auto;
+} 
+
+.news-item {
+  max-width: 700px; /* Set a max-width for the news item */
+  width: 90%; /* Make the width 90% of the max-width for better responsiveness */
+  margin: 20px auto; /* Center the box horizontally */
+  background-color: #ffffff; /* Light grey background for the news item */
+  padding: 20px;
+  border: 5px solid #333; /* Bold border with a dark color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a sleek effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the transform and shadow */
+}
+
+.news-item:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover for emphasis */
+}
+
+.news-item h2 {
+  font-size: 50vm;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight:1vm;
+  color: #333;
+}
+
+

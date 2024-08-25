@@ -1,0 +1,20 @@
+.about-container {
+background-image: url('./assets/background.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+padding: 100px 0;
+min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('../src/assets/Fonts/NightmarePills-BV2w.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'HeaderFont', sans-serif;
+    font-size:5vw;
+}

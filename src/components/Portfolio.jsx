@@ -7,7 +7,7 @@ import deathComesPage1 from '../assets/DeathComesFrontCover.png';
 
 const Portfolio = () => {
   const projects = [
-    { id: 1, title: 'Death Comes - The Comic', image: deathComesPage1, link: '/comic' },
+    { id: 1, title: 'Death Comes: The Prologue', image: deathComesPage1, link: '/comic' },
   ];
 
   return (
