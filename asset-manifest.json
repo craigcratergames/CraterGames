@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/CraterGames/static/css/main.179bef82.css",
-    "main.js": "/CraterGames/static/js/main.3f9026a7.js",
+    "main.css": "/CraterGames/static/css/main.cc44c688.css",
+    "main.js": "/CraterGames/static/js/main.cebd2d9f.js",
     "static/media/DeathComesFrontCover.png": "/CraterGames/static/media/DeathComesFrontCover.a248c75eee781a011db4.png",
     "static/media/DeathComesPg1.png": "/CraterGames/static/media/DeathComesPg1.fd83293e191148e487ff.png",
     "static/media/background.jpg": "/CraterGames/static/media/background.451dcb449a2555b733fe.jpg",
-    "static/media/Under-Construction.png": "/CraterGames/static/media/Under-Construction.33622e7466fa286244d5.png",
+    "static/media/NightmarePills-BV2w.ttf": "/CraterGames/static/media/NightmarePills-BV2w.20f7958e9e89acc87f1e.ttf",
     "static/media/DeathComesPg0.png": "/CraterGames/static/media/DeathComesPg0.aa3a7fc3d97cc4626772.png",
+    "static/media/slick.svg": "/CraterGames/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/CraterGames/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/CraterGames/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/CraterGames/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/CraterGames/index.html",
-    "main.179bef82.css.map": "/CraterGames/static/css/main.179bef82.css.map",
-    "main.3f9026a7.js.map": "/CraterGames/static/js/main.3f9026a7.js.map"
+    "main.cc44c688.css.map": "/CraterGames/static/css/main.cc44c688.css.map",
+    "main.cebd2d9f.js.map": "/CraterGames/static/js/main.cebd2d9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.179bef82.css",
-    "static/js/main.3f9026a7.js"
+    "static/css/main.cc44c688.css",
+    "static/js/main.cebd2d9f.js"
   ]
 }
