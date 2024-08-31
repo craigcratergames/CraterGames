@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../HeroSection.css';
 import gameImage from '../assets/DeathComesBoardGame.png'; // Image for the first section
 import comicImage from '../assets/DeathComesFrontCover.png'; // Image for the new comic book section
@@ -12,7 +13,7 @@ const HeroSection = () => {
           <div className="hero-text">
             <h2>Death Comes - The Board Game</h2>
             <p>Death Comes - The Board Game is our flagship board game that thrusts players into a relentless zombie apocalypse.</p>
-            <a href="/CraterGames/boardgame" className="read-more">Read More <span>&#8594;</span></a>
+            <Link to="/CraterGames/boardgame" className="read-more">Read More <span>&#8594;</span></Link>
           </div>
         </div>
       </div>
@@ -22,7 +23,7 @@ const HeroSection = () => {
           <div className="hero-text">
             <h2>Death Comes: The Prolouge</h2>
             <p>Death Comes: The Prolouge is our companion comic to our flagship board game.</p>
-            <a href="/CraterGames/comic" className="read-more">Read More <span>&#8594;</span></a>
+            <Link to="/CraterGames/comic" className="read-more">Read More <span>&#8594;</span></Link>
           </div>
         </div>
       </div>
