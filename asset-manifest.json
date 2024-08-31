@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/CraterGames/static/css/main.cc44c688.css",
-    "main.js": "/CraterGames/static/js/main.cebd2d9f.js",
+    "main.css": "/CraterGames/static/css/main.65956b96.css",
+    "main.js": "/CraterGames/static/js/main.8e93401e.js",
     "static/media/DeathComesFrontCover.png": "/CraterGames/static/media/DeathComesFrontCover.a248c75eee781a011db4.png",
     "static/media/DeathComesPg1.png": "/CraterGames/static/media/DeathComesPg1.fd83293e191148e487ff.png",
     "static/media/background.jpg": "/CraterGames/static/media/background.451dcb449a2555b733fe.jpg",
     "static/media/NightmarePills-BV2w.ttf": "/CraterGames/static/media/NightmarePills-BV2w.20f7958e9e89acc87f1e.ttf",
     "static/media/DeathComesPg0.png": "/CraterGames/static/media/DeathComesPg0.aa3a7fc3d97cc4626772.png",
-    "static/media/slick.svg": "/CraterGames/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/CraterGames/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/CraterGames/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/CraterGames/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/DeathComesBoardGame.png": "/CraterGames/static/media/DeathComesBoardGame.c8949790c7e3f00e00a6.png",
+    "static/media/Medic.png": "/CraterGames/static/media/Medic.15ac906e230564bc7ffe.png",
+    "static/media/Scout.png": "/CraterGames/static/media/Scout.3f1803e38b121e38229d.png",
+    "static/media/Farmer.png": "/CraterGames/static/media/Farmer.4de5ab237287756fb62a.png",
+    "static/media/Engineer.png": "/CraterGames/static/media/Engineer.c5f671ef892115d5cc22.png",
+    "static/media/Guard.png": "/CraterGames/static/media/Guard.8fa77481c9c125e8fcb4.png",
+    "static/media/Policeman.png": "/CraterGames/static/media/Policeman.a2aed682259885f88f68.png",
     "index.html": "/CraterGames/index.html",
-    "main.cc44c688.css.map": "/CraterGames/static/css/main.cc44c688.css.map",
-    "main.cebd2d9f.js.map": "/CraterGames/static/js/main.cebd2d9f.js.map"
+    "main.65956b96.css.map": "/CraterGames/static/css/main.65956b96.css.map",
+    "main.8e93401e.js.map": "/CraterGames/static/js/main.8e93401e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc44c688.css",
-    "static/js/main.cebd2d9f.js"
+    "static/css/main.65956b96.css",
+    "static/js/main.8e93401e.js"
   ]
 }
