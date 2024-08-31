@@ -2,12 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Portfolio.css';
-
 import deathComesPage1 from '../assets/DeathComesFrontCover.png';
+import boardGame from '../assets/DeathComesBoardGame.png';
 
 const Portfolio = () => {
   const projects = [
-    { id: 1, title: 'Death Comes: The Prologue', image: deathComesPage1, link: '/comic' },
+    { id: 1, title: 'Death Comes: The Board Game', image: boardGame, link: '/boardgame' },
+    { id: 2, title: 'Death Comes: The Prologue', image: deathComesPage1, link: '/comic' },
+    
+
   ];
 
   return (

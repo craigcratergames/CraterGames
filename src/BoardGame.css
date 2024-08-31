@@ -1,0 +1,100 @@
+/* BoardGame.css */
+
+.background {
+  background-image: url('./assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.board-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap to the next line if there's not enough space */
+  gap: 20px; /* Adds space between each card */
+  justify-content: left; /* Align items to the left */
+  padding: 20px;
+}
+
+.board-item {
+  position: relative;
+  flex: 1 1 200px; /* Allows each card to grow and shrink as needed, with a base width of 200px */
+  max-width: 300px; /* Ensure cards don't get too wide */
+  height: auto; /* Set a fixed height for consistency */
+  border-radius: 10px;
+  overflow: hidden; /* Ensure contents stay within boundaries */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visualization */
+  transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
+}
+
+.board-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.board-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire card */
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out; /* Smooth fade out */
+}
+
+.board-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out; /* Smooth fade in */
+}
+
+.board-item:hover .board-page {
+  opacity: 0; /* Hide image on hover */
+}
+
+.board-item:hover .board-description {
+  opacity: 1; /* Show description on hover */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .board-item {
+    flex: 1 1 150px; /* Make the cards smaller on smaller screens */
+    height: auto;
+  }
+
+  .board-container {
+    gap: 10px; /* Reduce the gap between cards on smaller screens */
+    padding: 10px;
+  }
+
+  .board-description {
+    height: auto;
+  }
+}
+
+/* Media Query for even smaller screens like mobile */
+@media (max-width: 480px) {
+  .board-item {
+    flex: 1 1 100%; /* Stack the cards vertically on very small screens */
+    height: 200px;
+  }
+
+  .board-container {
+    padding: 5px;
+  }
+
+  .board-description {
+    height: auto;
+  }
+}

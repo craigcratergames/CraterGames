@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from './About';
 import Portfolio from './Portfolio';
 import Comic from './Comic';
+import BoardGame from './BoardGame';
 import Contact from './Contact';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -21,6 +22,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/comic" element={<Comic />} />
+            <Route path="/boardgame" element={<BoardGame />} />
+
           </Routes>
         </div>
         <Footer />
