@@ -13,7 +13,7 @@ const HeroSection = () => {
           <div className="hero-text">
             <h2>Death Comes - The Board Game</h2>
             <p>Death Comes - The Board Game is our flagship board game that thrusts players into a relentless zombie apocalypse.</p>
-            <Link to="/CraterGames/boardgame" className="read-more">Read More <span>&#8594;</span></Link>
+            <Link to="/boardgame" className="read-more">Read More <span>&#8594;</span></Link>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@ const HeroSection = () => {
           <div className="hero-text">
             <h2>Death Comes: The Prolouge</h2>
             <p>Death Comes: The Prolouge is our companion comic to our flagship board game.</p>
-            <Link to="/CraterGames/comic" className="read-more">Read More <span>&#8594;</span></Link>
+            <Link to="/comic" className="read-more">Read More <span>&#8594;</span></Link>
           </div>
         </div>
       </div>
