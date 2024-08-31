@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CraterGames/static/css/main.65956b96.css",
-    "main.js": "/CraterGames/static/js/main.3e153c00.js",
+    "main.js": "/CraterGames/static/js/main.610a2a8e.js",
     "static/media/DeathComesFrontCover.png": "/CraterGames/static/media/DeathComesFrontCover.a248c75eee781a011db4.png",
     "static/media/DeathComesPg1.png": "/CraterGames/static/media/DeathComesPg1.fd83293e191148e487ff.png",
     "static/media/background.jpg": "/CraterGames/static/media/background.451dcb449a2555b733fe.jpg",
@@ -16,10 +16,10 @@
     "static/media/Policeman.png": "/CraterGames/static/media/Policeman.a2aed682259885f88f68.png",
     "index.html": "/CraterGames/index.html",
     "main.65956b96.css.map": "/CraterGames/static/css/main.65956b96.css.map",
-    "main.3e153c00.js.map": "/CraterGames/static/js/main.3e153c00.js.map"
+    "main.610a2a8e.js.map": "/CraterGames/static/js/main.610a2a8e.js.map"
   },
   "entrypoints": [
     "static/css/main.65956b96.css",
-    "static/js/main.3e153c00.js"
+    "static/js/main.610a2a8e.js"
   ]
 }
