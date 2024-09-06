@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/CraterGames/static/css/main.65956b96.css",
-    "main.js": "/CraterGames/static/js/main.610a2a8e.js",
+    "main.css": "/CraterGames/static/css/main.9e283fbb.css",
+    "main.js": "/CraterGames/static/js/main.327ce6d0.js",
+    "static/media/Death comes page 1-notext.png": "/CraterGames/static/media/Death comes page 1-notext.7d41ab8109ab67295621.png",
     "static/media/DeathComesFrontCover.png": "/CraterGames/static/media/DeathComesFrontCover.a248c75eee781a011db4.png",
-    "static/media/DeathComesPg1.png": "/CraterGames/static/media/DeathComesPg1.fd83293e191148e487ff.png",
     "static/media/background.jpg": "/CraterGames/static/media/background.451dcb449a2555b733fe.jpg",
     "static/media/NightmarePills-BV2w.ttf": "/CraterGames/static/media/NightmarePills-BV2w.20f7958e9e89acc87f1e.ttf",
-    "static/media/DeathComesPg0.png": "/CraterGames/static/media/DeathComesPg0.aa3a7fc3d97cc4626772.png",
     "static/media/DeathComesBoardGame.png": "/CraterGames/static/media/DeathComesBoardGame.c8949790c7e3f00e00a6.png",
     "static/media/Medic.png": "/CraterGames/static/media/Medic.15ac906e230564bc7ffe.png",
     "static/media/Scout.png": "/CraterGames/static/media/Scout.3f1803e38b121e38229d.png",
@@ -15,11 +14,11 @@
     "static/media/Guard.png": "/CraterGames/static/media/Guard.8fa77481c9c125e8fcb4.png",
     "static/media/Policeman.png": "/CraterGames/static/media/Policeman.a2aed682259885f88f68.png",
     "index.html": "/CraterGames/index.html",
-    "main.65956b96.css.map": "/CraterGames/static/css/main.65956b96.css.map",
-    "main.610a2a8e.js.map": "/CraterGames/static/js/main.610a2a8e.js.map"
+    "main.9e283fbb.css.map": "/CraterGames/static/css/main.9e283fbb.css.map",
+    "main.327ce6d0.js.map": "/CraterGames/static/js/main.327ce6d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.65956b96.css",
-    "static/js/main.610a2a8e.js"
+    "static/css/main.9e283fbb.css",
+    "static/js/main.327ce6d0.js"
   ]
 }
