@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   border-radius: 0;
   overflow: hidden; /* Ensure content stays within its boundaries */
 }
@@ -41,7 +41,7 @@
 .hero-text {
   flex: 1;
   padding: 20px;
-  background-color: black;
+  background: linear-gradient(180deg, #000000, #67caf8);
   color: white;
   display: flex;
   flex-direction: column;
@@ -52,6 +52,10 @@
 .hero-text h2 {
   font-size: 2.5em;
   margin-bottom: 5px;
+}
+
+.p {
+  color: #fff;
 }
 
 .hero-text p {
@@ -67,7 +71,7 @@
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  /*transition: background 0.3s ease;*/
   align-self: flex-start;
 }
 
@@ -76,9 +80,9 @@
   font-size: 1.5em;
 }
 
-.read-more:hover {
+/*.read-more:hover {
   background: #cc0000;
-}
+}*/
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {

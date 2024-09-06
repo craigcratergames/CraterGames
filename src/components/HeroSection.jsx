@@ -12,7 +12,6 @@ const HeroSection = () => {
           <div className="hero-image" style={{ backgroundImage: `url(${gameImage})` }}></div>
           <div className="hero-text">
             <h2>Death Comes - The Board Game</h2>
-            <p>Death Comes - The Board Game is our flagship board game that thrusts players into a relentless zombie apocalypse.</p>
             <Link to="/boardgame" className="read-more">Read More <span>&#8594;</span></Link>
           </div>
         </div>
@@ -22,7 +21,6 @@ const HeroSection = () => {
           <div className="hero-image" style={{ backgroundImage: `url(${comicImage})` }}></div>
           <div className="hero-text">
             <h2>Death Comes: The Prolouge</h2>
-            <p>Death Comes: The Prolouge is our companion comic to our flagship board game.</p>
             <Link to="/comic" className="read-more">Read More <span>&#8594;</span></Link>
           </div>
         </div>

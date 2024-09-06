@@ -1,16 +1,31 @@
+/* Add gradient background to the navbar */
+.navbar {
+  background: linear-gradient(90deg, #000000, #67caf8); 
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
 .brand-logo {
-    padding-left: 0; /* Removes any additional padding */
-    margin-left: 0; /* Adds margin to move it from the edge */
-  }
-  
-  .navbar-nav {
-    margin-left: auto; /* Keeps the navigation on the right */
-    padding-right: 0; /* Removes any additional padding */
-    margin-right: 0; /* Adds margin to move it from the edge */
-  }
-  
-  .navbar-nav .nav-link {
-    padding-left: 10px; /* Adjust spacing between links */
-    padding-right: 10px;
-  }
-  
+  padding-left: 0;
+  margin-left: 0;
+  font-size: 1.5rem;
+  color: #fff; /* Ensure the text is visible on the gradient */
+}
+
+.navbar-nav {
+  margin-left: auto;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff; /* Make the links white for visibility */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #ffd700; /* Change to a bright color on hover */
+}

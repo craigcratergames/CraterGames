@@ -23,7 +23,7 @@
   height: auto; /* Set a fixed height for consistency */
   border-radius: 10px;
   overflow: hidden; /* Ensure contents stay within boundaries */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visualization */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Optional: Add some shadow for better visualization */
   transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
 }
 
@@ -71,6 +71,7 @@
   .board-item {
     flex: 1 1 150px; /* Make the cards smaller on smaller screens */
     height: auto;
+    font-size: 0.8rem; /* Further reduced text size for very small devices */
   }
 
   .board-container {
@@ -88,6 +89,7 @@
   .board-item {
     flex: 1 1 100%; /* Stack the cards vertically on very small screens */
     height: 200px;
+    font-size: 0.7rem; /* Further reduced text size for very small devices */
   }
 
   .board-container {
@@ -98,3 +100,4 @@
     height: auto;
   }
 }
+

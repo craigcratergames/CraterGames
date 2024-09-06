@@ -1,19 +1,121 @@
+/* Comic.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .comic-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0;
-    overflow-y: auto;
-    background-image: url('./assets/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0;
+  background-image: url('./assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  color: #555;
+}
+
+.comic-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+.comic-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  perspective: 1000px; /* Perspective for 3D flip effect */
+}
+
+.comic-page {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 1s ease-in-out;
+}
+
+/* Flipping Animation */
+.flipping .comic-page {
+  transform: rotateY(-65deg); /* 3D rotation effect */
+  backface-visibility: hidden; /* Hide the back of the page */
+  box-shadow: none; /* Remove shadow during flip */
+}
+
+/* Navigation Buttons */
+.nav-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.nav-button:hover:not(:disabled) {
+  color: #000;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .comic-page-container {
+      padding: 0;
   }
-  
+
   .comic-page {
-    width: 100%;
-    max-width: 600px; /* Adjust as needed */
-    margin-bottom: 20px;
+      max-width: 90%;
+      min-height: 100vh;
   }
-  
+
+  .nav-button {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .nav-button {
+      font-size: 1.2rem;
+  }
+
+  .comic-page {
+    max-width: 90%;
+    min-height: 100vh;
+}
+}

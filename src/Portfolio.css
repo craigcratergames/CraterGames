@@ -1,78 +1,92 @@
 /* Portfolio.css */
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-  .portfolio-container {
-    background-image: url('./assets/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    min-height: 100vh;
-  }
-  
-  h2 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .portfolio-item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .portfolio-image {
-    width: 100%;
-    transition: transform 0.3s ease;
-  }
-  
-  .portfolio-item:hover .portfolio-image {
-    transform: scale(1.1);
-  }
-  
-  .portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .portfolio-item:hover .portfolio-overlay {
-    opacity: 1;
-  }
-  
-  .portfolio-overlay h3 {
-    color: #fff;
-    font-size: 24px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  height: 100%;
+  overflow-x: hidden;
+}
 
-  @font-face {
-    font-family: 'HeaderFont';
-    src: url('../src/assets/Fonts/NightmarePills-BV2w.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.portfolio-container {
+  background-image: url('./assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  min-height: 100vh;
 }
 
 h2 {
-    font-family: 'HeaderFont', sans-serif;
-    font-size:5vw;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'HeaderFont', sans-serif;
+  font-size: 5vw;
 }
-  
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted minmax for better responsiveness */
+  gap: 20px;
+  padding: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Optional: Adds rounded corners to each item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Optional: Adds shadow for better visualization */
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-image {
+  transform: scale(1.1);
+  opacity: 0.25; /* Hide image on hover */
+  transform: rotateX(-45deg); /* 3D rotation effect */
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h3 {
+  color: #000000;
+  font-size: 24px;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+  .portfolio-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusts for mobile screens */
+  }
+
+  .portfolio-overlay h3 {
+      font-size: 18px; /* Smaller text size for mobile */
+  }
+}
