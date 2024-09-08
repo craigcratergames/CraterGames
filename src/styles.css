@@ -37,3 +37,19 @@ nav ul li a:hover {
   flex-grow: 1;
   min-height: 100%;
 }
+
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('../src/assets/Fonts/NightmarePills-BV2w.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'HeaderFont', sans-serif;
+  font-size:5vw;
+}
+
+p {
+  font-family: 'HeaderFont', sans-serif;
+}

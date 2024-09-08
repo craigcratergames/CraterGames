@@ -1,44 +1,41 @@
 import React, { useState } from 'react';
-import '../Comic.css'; // Style the comic pages
+import '../Comic.css';
 
 import page0 from '../assets/DeathComesFrontCover.png';
 import page1 from '../assets/Death comes page 1-notext.png';
 
-
 const Comic = () => {
-  const comicPages = [page0, page1,];
   const [currentPage, setCurrentPage] = useState(0);
-  const [isFlipping, setIsFlipping] = useState(false); // Track flipping state
+  const [isFlipping, setIsFlipping] = useState(false);
 
-  const goToNextPage = () => {
-    if (currentPage < comicPages.length - 1) {
-      setIsFlipping(true); // Start flip animation
-      setTimeout(() => {
-        setCurrentPage(currentPage + 1);
-        setIsFlipping(false); // Reset flip animation after 1 second
-      }, 1000);
-    }
+  const comicPages = [page0, page1];
+
+  const changePage = (direction) => {
+    setIsFlipping(true);
+    setTimeout(() => {
+      setCurrentPage((prevPage) => prevPage + direction);
+      setIsFlipping(false);
+    }, 1000);
   };
 
-  const goToPreviousPage = () => {
-    if (currentPage > 0) {
-      setIsFlipping(true); // Start flip animation
-      setTimeout(() => {
-        setCurrentPage(currentPage - 1);
-        setIsFlipping(false); // Reset flip animation after 1 second
-      }, 1000);
-    }
-  };
+  const isFirstPage = currentPage === 0;
+  const isLastPage = currentPage === comicPages.length - 1;
 
   return (
     <div className="comic-container">
       <h2>Death Comes: The Prologue</h2>
-      <p>Join us on a journey of Love, Death and Zombies.</p>
-      
+      <p>
+        Join us on a journey of Love, Death, and Zombies.
+        <br />
+        Mostly just Death and Zombies.
+      </p>
+
       <div className="comic-book">
-        <button onClick={goToPreviousPage} disabled={currentPage === 0} className="nav-button">
-          &#8592; Previous
-        </button>
+        {/* Clickable areas on the left and right sides */}
+        <div
+          className="clickable-area left"
+          onClick={() => !isFirstPage && changePage(-1)}
+        ></div>
 
         <div className={`comic-page-container ${isFlipping ? 'flipping' : ''}`}>
           <img
@@ -48,9 +45,10 @@ const Comic = () => {
           />
         </div>
 
-        <button onClick={goToNextPage} disabled={currentPage === comicPages.length - 1} className="nav-button">
-          Next &#8594;
-        </button>
+        <div
+          className="clickable-area right"
+          onClick={() => !isLastPage && changePage(1)}
+        ></div>
       </div>
     </div>
   );

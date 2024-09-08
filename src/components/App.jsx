@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./Home";
-import About from './About';
 import Portfolio from './Portfolio';
 import Comic from './Comic';
 import BoardGame from './BoardGame';
@@ -18,7 +17,6 @@ const App = () => {
         <div className="flex-grow-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/comic" element={<Comic />} />

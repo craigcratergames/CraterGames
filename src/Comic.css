@@ -1,4 +1,4 @@
-/* Reset some basic styles */
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +8,9 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
+  color: #333;
   height: 100%;
   overflow-x: hidden;
-  color: #333;
 }
 
 /* Main container for the comic book */
@@ -25,9 +25,9 @@ body {
   background-position: center;
   min-height: 100vh;
   text-align: center;
-  overflow: hidden;
 }
 
+/* Comic title */
 h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -48,7 +48,27 @@ p {
   position: relative;
   width: 90%;
   max-width: 900px;
-  perspective: 1200px; /* Perspective for 3D page flip */
+  perspective: 1200px;
+  margin: 0 auto;
+}
+
+/* Clickable areas for navigation */
+.clickable-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  cursor: pointer;
+  z-index: 2; /* Make sure the clickable areas are above the comic image */
+}
+
+/* Left and Right divisions */
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
 }
 
 /* Container for each comic page */
@@ -60,51 +80,21 @@ p {
   padding: 10px;
 }
 
-/* Comic page */
 .comic-page {
-  max-width: 100%;
+  max-width: 80%;
   max-height: 90vh;
-  height: auto;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 1s ease, box-shadow 0.6s ease; /* Smoother transitions */
+  transition: transform 1s ease, box-shadow 0.6s ease;
   backface-visibility: hidden;
 }
 
-/* Flipping animation */
 .flipping .comic-page {
-  transform: rotateY(-65deg); /* Flip the page */
-  box-shadow: none; /* Remove shadow during flip */
+  transform: rotateY(-65deg);
+  box-shadow: none;
 }
 
-/* Navigation buttons */
-.nav-button {
-  background-color: transparent;
-  border: none;
-  font-size: 2.5rem;
-  color: #333;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.nav-button:disabled {
-  color: #ccc;
-  cursor: not-allowed;
-}
-
-.nav-button:hover:not(:disabled) {
-  color: #000;
-}
-
-/* Make sure navbar and footer stay visible within the viewport */
-.navbar,
-footer {
-  position: relative;
-  z-index: 1000; /* Ensure they stay above the content */
-  width: 100%;
-}
-
-/* Media Queries for Responsiveness */
+/* Media Queries for responsiveness */
 @media (max-width: 1024px) {
   h2 {
     font-size: 2rem;
@@ -113,20 +103,11 @@ footer {
   p {
     font-size: 1rem;
   }
-
-  .nav-button {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 768px) {
   .comic-page {
-    max-width: 100%;
     max-height: 70vh;
-  }
-
-  .nav-button {
-    font-size: 1.8rem;
   }
 }
 
@@ -140,11 +121,6 @@ footer {
   }
 
   .comic-page {
-    max-width: 100%;
     max-height: 60vh;
-  }
-
-  .nav-button {
-    font-size: 1.5rem;
   }
 }

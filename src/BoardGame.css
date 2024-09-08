@@ -2,10 +2,10 @@
 
 .background {
   background-image: url('./assets/background.jpg');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .board-container {

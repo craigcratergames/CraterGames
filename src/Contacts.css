@@ -1,20 +1,94 @@
-.contacts-container {
-    background-image: url('./assets/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    min-height: 100vh;
-    }
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    @font-face {
-        font-family: 'HeaderFont';
-        src: url('../src/assets/Fonts/NightmarePills-BV2w.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    h2 {
-        font-family: 'HeaderFont', sans-serif;
-        font-size:5vw;
-    }
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.contacts-container {
+  flex: 1;
+  background-image: url('./assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item svg {
+  margin-right: 10px;
+  color: #555;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #0073e6; /* Change to your preferred hover color */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+  }
+
+  .social-link {
+    font-size: 1.5rem;
+  }
+}
