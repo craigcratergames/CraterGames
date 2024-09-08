@@ -1,7 +1,12 @@
 /* Add gradient background to the navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps it on top of other content */
   background: linear-gradient(90deg, #000000, #67caf8); 
-  padding: 10px 0;
+  padding: 10px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
@@ -29,3 +34,5 @@
 .navbar-nav .nav-link:hover {
   color: #ffd700; /* Change to a bright color on hover */
 }
+
+

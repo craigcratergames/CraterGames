@@ -1,76 +1,87 @@
-/* Comic.css */
-
-body {
-  font-family: Arial, sans-serif;
+/* Reset some basic styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   height: 100%;
   overflow-x: hidden;
+  color: #333;
 }
 
+/* Main container for the comic book */
 .comic-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0;
+  justify-content: center;
+  padding: 20px;
   background-image: url('./assets/background.jpg');
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 0;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
   color: #333;
 }
 
 p {
   font-size: 1.2rem;
-  margin-bottom: 0;
   color: #555;
+  margin-bottom: 20px;
 }
 
+/* Comic book section */
 .comic-book {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 80%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 900px;
+  perspective: 1200px; /* Perspective for 3D page flip */
 }
 
+/* Container for each comic page */
 .comic-page-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 10px;
-  perspective: 1000px; /* Perspective for 3D flip effect */
 }
 
+/* Comic page */
 .comic-page {
   max-width: 100%;
+  max-height: 90vh;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 1s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 1s ease, box-shadow 0.6s ease; /* Smoother transitions */
+  backface-visibility: hidden;
 }
 
-/* Flipping Animation */
+/* Flipping animation */
 .flipping .comic-page {
-  transform: rotateY(-65deg); /* 3D rotation effect */
-  backface-visibility: hidden; /* Hide the back of the page */
+  transform: rotateY(-65deg); /* Flip the page */
   box-shadow: none; /* Remove shadow during flip */
 }
 
-/* Navigation Buttons */
+/* Navigation buttons */
 .nav-button {
   background-color: transparent;
   border: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #333;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -85,37 +96,55 @@ p {
   color: #000;
 }
 
+/* Make sure navbar and footer stay visible within the viewport */
+.navbar,
+footer {
+  position: relative;
+  z-index: 1000; /* Ensure they stay above the content */
+  width: 100%;
+}
+
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .comic-page-container {
-      padding: 0;
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 2rem;
   }
 
-  .comic-page {
-      max-width: 90%;
-      min-height: 100%;
+  p {
+    font-size: 1rem;
   }
 
   .nav-button {
-      font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .comic-page {
+    max-width: 100%;
+    max-height: 70vh;
+  }
+
+  .nav-button {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 480px) {
   h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   p {
-      font-size: 1rem;
-  }
-
-  .nav-button {
-      font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .comic-page {
-    max-width: 90%;
-    min-height: 100%;
-}
+    max-width: 100%;
+    max-height: 60vh;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+  }
 }

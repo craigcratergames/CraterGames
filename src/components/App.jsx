@@ -24,8 +24,8 @@ const App = () => {
             <Route path="/comic" element={<Comic />} />
             <Route path="/boardgame" element={<BoardGame />} />
           </Routes>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </Router>
   );
